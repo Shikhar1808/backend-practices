@@ -1,0 +1,8 @@
+1.There will be a get request to get all the tasks
+2. There will be a post request to add a new task
+3. detele request to delete a task
+4, PUT/PATCH request for updating a task and it will redirect it to a new page
+
+Difference between PUT and PATCH
+PUT- You are replacing the entire existing resource, meaning al lthe resouces will be sent to req.body even if it is not modified
+PATCh- Only the fields which are changing will be passed in the req.body 
