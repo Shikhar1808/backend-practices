@@ -1,0 +1,4 @@
+/node_modules
+.env
+whatIDid.txt
+package-lock.json
