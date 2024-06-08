@@ -19,11 +19,10 @@ app.get('/', (req,res) =>{
 });
 
 io.on('connection', (socket) => { //socket is the client(user)
-    console.log('a user connected',socket.id);
-    socket.on('chat', (message)=>{
-        io.emit('message', message);
-    })
-})
+    socket.on('chat message', (msg) => {
+      io.emit('chat message', msg);
+    });
+  });
 const start = async ()=>{
     try{
         
